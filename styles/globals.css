@@ -1,27 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/*Google font popphins Bold 700사용*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* @layer components: 이 코드는 Tailwind CSS에서 사용되는 @layer 디렉티브로, 특정 레이어에 스타일을 정의하는 데 사용됩니다. 여기서는 "components" 레이어에 스타일을 추가하고 있습니다.
+.nav-link: 이 부분은 클래스 선택자로, HTML 문서 내에서 클래스가 "nav-link"로 지정된 요소에 스타일을 적용합니다.
+@apply: Tailwind CSS에서 사용되는 믹스인을 적용하는데 사용됩니다. 여기서는 .nav-link에 다양한 스타일 속성을 적용하고 있습니다*/
+@layer components {
+  .nav-link {
+    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block 
+    /* 여기서부터는 노란색줄의 관한 내용 블럭요소지정 , after:content 내용x , absolute 절대위치지정 , 높이지정 , 색상 노란색 , after:w-full 가로너비 100%설정
+     */
+    after:block after:content-[''] after:absolute after:h-[3px]
+    after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .nav-link-mobile {
+    /* 모바일반응형일떄 설정 mb-[2rem] margin-bottom의 간격 , 텍스트 크기 설정 text-[27px] */
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block 
+    after:block after:content-[''] after:absolute after:h-[3px]
+    after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+  }
 }
