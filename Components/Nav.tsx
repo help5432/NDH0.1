@@ -5,9 +5,11 @@ import React from "react";
 interface Props {
   openNav: () => void;
 }
+
+//3.Nav 컴포넌트에서 openNav Ture함수 호출 , onclick 이벤트 발생시 openNav true 호출 -> nav상태 true로 변경
 const Nav = ({ openNav }: Props) => {
   return (
-    <div className="w-[100%] top-0 h-[12vh] bg-[#141c27] shadow-md">
+    <div className="w-[100%] sticky z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
       <div className="flex items-center justify-between w-[80%] mx-auto h-[12vh]">
         <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
           WEB<span className="text-yellow-300">DEV</span>
