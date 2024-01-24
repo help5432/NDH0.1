@@ -3,6 +3,7 @@ import React from "react";
 import { Particle } from "tsparticles-engine";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
+import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 
 const Hero = () => {
   return (
@@ -14,6 +15,18 @@ const Hero = () => {
             Hi I'm<span className="text-yellow-300">Dae Hee</span>
           </h1>
           <TextEffect />
+          <p className="mt-[2rem] text-[18px] text-[#ffffff92]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+            placeat, explicabo praesentium ipsa quo, ea dignissimos eveniet
+            doloribus enim temporibus quisquam. Officia architecto optio amet
+            sapiente. Est reiciendis ea consequatur?
+          </p>
+          <div className="mt-[2rem] space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
+            <button className="px-[2rem] hover:bg-yellow-400 transistion-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+              <p>Download Cv</p>
+              <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
+            </button>
+          </div>
         </div>
         <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]">
           <Image
