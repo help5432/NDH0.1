@@ -75,10 +75,10 @@ const App = () => {
           width: 1,
         },
         move: {
-          direction: MoveDirection.none,
+          direction: "bottom-left",
           enable: true,
           outModes: {
-            default: OutMode.out,
+            default: "split",
           },
           random: false,
           speed: 6,

@@ -1,15 +1,16 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
+//interface 이므로  따라서 MobileNav 컴포넌트가 사용되는 곳에서는 반드시 nav와 closeNav 속성을 제공해주어야 합니다
 interface Props {
   nav: boolean;
-  //는 TypeScript에서 함수 또는 표현식이 아무 값도 반환하지 않음을 나타내는 타입입니다. 즉, 해당 함수나 표현식은 반환 값이 없다는 것을 의미합니다.
+  //() => void 형태로 아무런 값도 반환하지 않는 함수.
   closeNav: () => void;
 }
 
-//MobileNav 컴포넌트 내부에서는 nav 상태와 closeNav 함수를 Props 인터페이스에 정의된대로 받아와 사용합니다.
+//3.MobileNav에
 const MobileNav = ({ nav, closeNav }: Props) => {
-  // nav가 true 일경우 translate-x-0 , false일경우 translate-x-[-100%] 할당
+  // nav가 true 일경우 translate-x-0,false일경우 translate-x-[-100%] ( 클래스를 적용하면 해당 요소가 수평으로 왼쪽으로 100% 만큼 이동=숨김) 할당
   const navAnimation = nav ? "translate-x-0" : "translate-x-[-100%]";
 
   return (
@@ -26,7 +27,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         <div className="nav-link-mobile">BLOG</div>
         <div className="nav-link-mobile">CONTACT</div>
       </div>
-      {/* XMarkIcon 아이콘 설정 X아이콘*/}
+      {/* 모바일 XmarkIcon 아이콘 설정 X아이콘 누를시 close되게*/}
       <div
         onClick={closeNav}
         className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400"

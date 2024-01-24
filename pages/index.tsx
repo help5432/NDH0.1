@@ -3,7 +3,7 @@ import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
 import React, { useState } from "react";
 
-//1. homepage 컴포넌트 초기 렌더링
+//1. Homepage 컴포넌트 초기 렌더링
 const HomePage = () => {
   //1.usestate사용 초기 nav 상태 false로 설정
   const [nav, setNav] = useState(false);
