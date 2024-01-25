@@ -1,6 +1,8 @@
+import About from "@/Components/About";
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
+import Service from "@/Components/Service";
 import React, { useState } from "react";
 
 //1. Homepage 컴포넌트 초기 렌더링
@@ -19,9 +21,14 @@ const HomePage = () => {
            2.Nav컴포넌트에는 openNav함수전달 props로 */}
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-
         {/* Hero section */}
         <Hero />
+        <div className="relative z-[30] ">
+          {/* About  */}
+          <About />
+          {/* Service */}
+          <Service />
+        </div>
       </div>
     </div>
   );

@@ -22,4 +22,9 @@
     after:block after:content-[''] after:absolute after:h-[3px]
     after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
+
+  /* Service.tsx , p태그*/
+  .heading {
+    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
+  }
 }

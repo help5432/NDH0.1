@@ -30,7 +30,8 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       {/* 모바일 XmarkIcon 아이콘 설정 X아이콘 누를시 close되게*/}
       <div
         onClick={closeNav}
-        className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400"
+        // z-100000 맨앞 = z  가장 상위로 먼저 보이게 설정
+        className="absolute z-[1000000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400"
       >
         <XMarkIcon />
       </div>
