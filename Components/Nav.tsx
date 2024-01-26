@@ -1,4 +1,4 @@
-import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
+import { Bars3BottomRightIcon, Bars3Icon } from "@heroicons/react/16/solid";
 import { Bars3BottomLeftIcon } from "@heroicons/react/20/solid";
 import React from "react";
 
@@ -23,7 +23,8 @@ const Nav = ({ openNav }: Props) => {
         <div className="nav-link">CONTACT</div>
         {/* Nav Bars3 아이콘생성  , heroicon(react이용)*/}
         <div onClick={openNav}>
-          <Bars3BottomLeftIcon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
+          {/* Hamberger Menu UI or Doner Menu  */}
+          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
         </div>
       </div>
     </div>

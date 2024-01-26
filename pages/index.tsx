@@ -3,6 +3,9 @@ import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
 import Service from "@/Components/Service";
+import Skills from "@/Components/Skills";
+import SkillsItem from "@/Components/SkillsItem";
+import SkillsLanguage from "@/Components/SkillsLanguage";
 import React, { useState } from "react";
 
 //1. Homepage 컴포넌트 초기 렌더링
@@ -28,6 +31,11 @@ const HomePage = () => {
           <About />
           {/* Service */}
           <Service />
+          {/* Skills */}
+          <Skills />
+          {/* SkillsItem */}
+
+          {/* SkillsLanguage */}
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
   return (
     //모바일Nav  flex 컨테이너 위치&배경색지정 //css == global.css // homepage index.tsx
-    // 잘모르겠는 부분? transform transition-all
+
     <div
       className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[10000] bg-[#09101a]`}
     >

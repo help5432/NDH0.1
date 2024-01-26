@@ -20,7 +20,8 @@ React , node.js , Tailwind CSS
 
 <!-- 진행과정 -->
 
-2424-01-26 0.4 about 컴포넌트 , service 컴포넌트 작성 error x , service 컴포넌트의 grid 블록요소 작성까지 마무리
+2424-01-26 0.4 about 컴포넌트 , service 컴포넌트 작성 error x , service 마무리
+2024-01-26 0.4 이어서 Skils , SkilsItem , SkillsLanguage 컴포넌트 작성
 
 <!-- ERROR -->
 
